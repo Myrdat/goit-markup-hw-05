@@ -50,7 +50,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-        <button class="baner list btn-baner" type="button">Заказать услугу</button>
+        <button data-modal-open class="baner list btn-baner" type="button">Заказать услугу</button>
         </div>
     </section>
 
@@ -127,7 +127,7 @@
     
     <section class="team">
         <div class="container">
-            <h2 class="title-main">Наша команда</h2>
+            <h2 class="title-main team">Наша команда</h2>
             <ul class="list">
                 <li class="team-card">
                    <img src="./images/teamcard1.jpg" width="270" alt="team card">
@@ -369,8 +369,15 @@
             </ul>
     </section>
 
+    <script src="./js/modal.js"></script>    
+
 </main>
+
+
 <!-- Подвал -->
+
+
+
 <footer>
     <div class="container">
         <div class="container-address">
@@ -440,6 +447,13 @@
             </div>  -->
     </div>
 </footer>
+
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button data-modal-close>Закрить</button>
+    </div>
+</div>
 <script src="./js/modal.js"></script>
 </body>
 </html>
